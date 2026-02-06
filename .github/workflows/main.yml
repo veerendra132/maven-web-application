@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: Simple CI Pipeline
 
 on:
   push:
@@ -13,8 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run build
-        run: echo "Build started"
+      - name: Print message
+        run: echo "Hello, GitHub Actions!"
 
-      - name: Run tests
-        run: echo "Tests running"
+      - name: List files
+        run: ls
